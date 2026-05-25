@@ -1,14 +1,211 @@
-body {
-    overflow-x: hidden;
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --text: #1a1a1a;
+    --text-muted: #666;
+    --text-faint: #999;
+    --border: rgba(0,0,0,0.1);
+    --bg: #fff;
+    --bg-soft: #f7f6f3;
+    --accent: #1a1a1a;
+    --tag-bg: #f0efe9;
+    --tag-text: #444;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #e8e8e6;
+      --text-muted: #999;
+      --text-faint: #666;
+      --border: rgba(255,255,255,0.1);
+      --bg: #111;
+      --bg-soft: #1a1a18;
+      --accent: #e8e8e6;
+      --tag-bg: #222;
+      --tag-text: #aaa;
+    }
+  }
+
+  body {
+    font-family: 'Georgia', serif;
+    background: var(--bg);
+    color: var(--text);
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+    line-height: 1.7;
+  }
+
+  header {
+    margin-bottom: 4rem;
+  }
+
+  .name {
+    font-size: 2.2rem;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.4rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+  }
+
+  .links {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  .links a {
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .links a:hover { color: var(--text); border-color: var(--text); }
+
+  section {
+    margin-bottom: 3.5rem;
+  }
+
+  .section-label {
+    font-family: 'Courier New', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+  }
+
+  .experience {
     display: flex;
     flex-direction: column;
-    font-family: Arial, sans-serif;
-    padding: 30px;
-    font-size: 14px;
-}
+    gap: 2rem;
+  }
 
-hr {
-    border: none;
-    border-top: 1px solid black;
-    width: 100%;
-}
+  .job {}
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .job-title {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text);
+  }
+
+  .job-period {
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    color: var(--text-faint);
+    white-space: nowrap;
+  }
+
+  .job-company {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-bottom: 0.75rem;
+  }
+
+  .job ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .job li {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    padding-left: 1rem;
+    position: relative;
+    line-height: 1.6;
+  }
+
+  .job li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--text-faint);
+  }
+
+  .project {
+    margin-bottom: 2rem;
+  }
+
+  .project-name {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text);
+    margin-bottom: 0.25rem;
+  }
+
+  .project-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.6rem;
+  }
+
+  .tags {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    font-family: 'Courier New', monospace;
+    font-size: 0.7rem;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    padding: 3px 8px;
+    border-radius: 3px;
+    letter-spacing: 0.03em;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+  }
+
+  .skill-group {}
+
+  .skill-group-label {
+    font-family: 'Courier New', monospace;
+    font-size: 0.7rem;
+    color: var(--text-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.4rem;
+  }
+
+  .skill-list {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+  }

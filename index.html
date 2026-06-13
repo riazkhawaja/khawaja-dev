@@ -2,14 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muhammad Khawaja</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-
     <header>
         <h1 class="name">Muhammad Khawaja</h1>
         <p class="tagline">Full-stack developer. Edmonton, AB.</p>
@@ -22,19 +21,23 @@
 
     <section>
         <div class="section-label">About</div>
-        <p>Full-stack software developer
-            with hands-on experience building production systems across web, mobile, and
-            cloud infrastructure. Proven track record delivering AI-integrated applications, containerized deployments,
-            and
-            automation tooling. Seeking full-time software engineering roles.
+        <p>
+            Full-stack software developer with hands-on experience building
+            production systems across web, mobile, and cloud infrastructure, owning
+            projects from requirements through deployment. Strongest at bridging
+            technical builds with non-technical stakeholders and turning business
+            needs into working software. Seeking full-time software engineering
+            roles.
         </p>
-        <p>Interests: AI integration, distributed systems, and software architecture.</p>
+        <p>
+            Interests: AI integration, distributed systems, and software
+            architecture.
+        </p>
     </section>
 
     <section>
         <div class="section-label">Experience</div>
         <div class="experience">
-
             <div class="job">
                 <div class="job-header">
                     <span class="job-title">Software Developer</span>
@@ -42,12 +45,44 @@
                 </div>
                 <div class="job-company">Hitek Analytics · Contract, Part-Time</div>
                 <ul>
-                    <li>Built a Next.js + PostgreSQL web portal for agricultural service requests and payment
-                        processing.</li>
-                    <li>Integrated OpenAI APIs to generate LLM-based soil health insights, cutting report time by 50%.
+                    <li>
+                        Led development of multiple web and mobile applications for an agricultural-analytics company to
+                        digitize
+                        agronomy services, supporting 200+ users and reducing manual reporting overhead across the
+                        business.
                     </li>
-                    <li>Shipped a cross-platform mobile app serving 200+ farmers and agronomists.</li>
-                    <li>Migrated on-premise servers to Docker on VPS with S3 storage — 99.9% uptime achieved.</li>
+                    <li>
+                        Architected and built an agronomist web portal that let staff manage service requests, generate
+                        soil-health reports,
+                        and process client payments in one system, replacing a fragmented manual workflow.
+                    </li>
+                    <li>
+                        Identified report generation as the biggest time sink and integrated OpenAI APIs to
+                        auto-generate agronomic
+                        insights from soil data, cutting report time by 50%.
+                    </li>
+                    <li>
+                        Engineered a multi-format export engine generating client-ready PDF, XLSX, and CSV reports from
+                        lab data,
+                        including chart-image generation for visual soil-health summaries embedded in PDFs.
+                    </li>
+                    <li>Implemented secure authentication and Role-Based Access Control supporting distinct roles
+                        (scientists, team
+                        members, registered users), with OTP verification, login challenge, and password-reset flows.
+                    </li>
+                    <li>Built a cross-platform mobile application (React Native) serving 200+ users, delivering curated
+                        agronomic content
+                        with offline support.</li>
+                    <li>Orchestrated the migration of on-premise server environments to a containerized Docker
+                        architecture on a VPS,
+                        integrating S3-compatible object storage and achieving 99.9% uptime for the agronomist portal.
+                    </li>
+                    <li>Established a CI/CD pipeline with GitHub Actions to automate linting, testing, and Docker image
+                        deployment,
+                        reducing release time and deployment errors.</li>
+                    <li>Handled incoming IT and feature requests directly with stakeholders, scoped requirements, and
+                        produced data
+                        reports to track portal usage and service throughput.</li>
                 </ul>
             </div>
 
@@ -58,13 +93,35 @@
                 </div>
                 <div class="job-company">City of Edmonton</div>
                 <ul>
-                    <li>Automated training data sync with Google Apps Script + REST APIs, removing manual work.</li>
-                    <li>Built a scheduling dashboard that increased course throughput by 300% for 200+ employees.</li>
-                    <li>Migrated 10,000+ legacy records to a relational DB, cutting query times by ~60%.</li>
-                    <li>Implemented RBAC to restrict sensitive employee data to authorized supervisors only.</li>
+                    <li>Engineered a centralized scheduling dashboard that increased course throughput by 300%, ensuring
+                        timely
+                        recertification of over 200+ municipal waste employees and alignment with provincial OHS Act
+                        regulations.
+                    </li>
+                    <li>
+                        Developed custom automation scripts using Google Apps Script and REST APIs to synchronize
+                        employee training
+                        data with municipal scheduling software.
+                    </li>
+                    <li>
+                        Migrated 10,000+ historical training records from legacy spreadsheets into a relational
+                        database, reducing query
+                        times by ∼60% and eliminating duplicate data.
+                    </li>
+                    <li>
+                        Defined data-validation rules during the legacy-records migration to catch malformed and
+                        duplicate entries,
+                        improving reporting accuracy for OHS recertification tracking.
+                    </li>
+                    <li>Implemented Role-Based Access Control within Google Apps Script to protect sensitive employee
+                        data.
+                    </li>
+                    <li>Built the scheduling dashboard’s front-end interface and collaborated with training coordinators
+                        to translate
+                        operational requirements into automated workflows.
+                    </li>
                 </ul>
             </div>
-
         </div>
     </section>
 
@@ -73,17 +130,11 @@
 
         <div class="project">
             <div class="project-name">FlowyForm</div>
-            <div class="project-desc">Form builder SaaS with drag-and-drop UI, dynamic schema generation, AI spam
-                detection via OpenAI's moderation API, S3 file uploads, and OAuth 2.0 authentication.</div>
-            <div class="tags">
-                <span class="tag">Next.js</span>
-                <span class="tag">PostgreSQL</span>
-                <span class="tag">S3</span>
-                <span class="tag">OpenAI</span>
-                <span class="tag">OAuth 2.0</span>
+            <div class="project-desc">
+                Form builder SaaS with drag-and-drop UI, dynamic schema generation, AI
+                spam detection via OpenAI's moderation API, and more.
             </div>
         </div>
-
     </section>
 
     <section>
@@ -91,27 +142,34 @@
         <div class="skills-grid">
             <div class="skill-group">
                 <div class="skill-group-label">Languages</div>
-                <div class="skill-list">TypeScript<br>Python<br>Java<br>C<br>SQL</div>
+                <div class="skill-list">
+                    TypeScript<br />Python<br />Java<br />C<br />SQL
+                </div>
             </div>
             <div class="skill-group">
                 <div class="skill-group-label">Frameworks</div>
-                <div class="skill-list">Next.js<br>React<br>Node.js<br>Express<br>Angular</div>
+                <div class="skill-list">
+                    Next.js<br />React<br />Node.js<br />Express<br />Angular
+                </div>
             </div>
             <div class="skill-group">
                 <div class="skill-group-label">Cloud & DevOps</div>
-                <div class="skill-list">Docker<br>AWS<br>CI/CD<br>Nginx<br>Firebase</div>
+                <div class="skill-list">
+                    Docker<br />AWS<br />CI/CD<br />Nginx<br />Firebase
+                </div>
             </div>
             <div class="skill-group">
                 <div class="skill-group-label">Databases</div>
-                <div class="skill-list">PostgreSQL<br>MongoDB<br>Firebase</div>
+                <div class="skill-list">PostgreSQL<br />MongoDB<br />Firebase</div>
             </div>
             <div class="skill-group">
                 <div class="skill-group-label">AI & ML</div>
-                <div class="skill-list">OpenAI<br>Gemini<br>Anthropic<br>LLM integration</div>
+                <div class="skill-list">
+                    OpenAI<br />Gemini<br />Anthropic<br />LLM integration
+                </div>
             </div>
         </div>
     </section>
-
 </body>
 
 </html>

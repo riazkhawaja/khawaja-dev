@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muhammad Khawaja</title>
     <link rel="stylesheet" href="./styles.css" />
 </head>
-
 <body>
     <header>
         <h1 class="name">Muhammad Khawaja</h1>
@@ -22,16 +20,15 @@
     <section>
         <div class="section-label">About</div>
         <p>
-            Full-stack software developer with hands-on experience building
-            production systems across web, mobile, and cloud infrastructure, owning
-            projects from requirements through deployment. Strongest at bridging
-            technical builds with non-technical stakeholders and turning business
-            needs into working software. Seeking full-time software engineering
-            roles.
+            Full-stack developer who ships production systems end to end — web,
+            mobile, and the cloud infrastructure underneath — from requirements
+            through deployment. I'm at my best turning a vague business need into
+            working software, and translating between the build and the
+            non-technical people who depend on it.
         </p>
         <p>
-            Interests: AI integration, distributed systems, and software
-            architecture.
+            I'm interested in large-scale distributed systems, database
+            optimization, and web development.
         </p>
     </section>
 
@@ -46,57 +43,43 @@
                 <div class="job-company">Hitek Analytics · Contract, Part-Time</div>
                 <ul>
                     <li>
-                        Led development of multiple web and mobile applications for an
-                        agricultural-analytics company to digitize agronomy services,
-                        supporting 200+ users and reducing manual reporting overhead
-                        across the business.
+                        Built and shipped an agronomist web portal (TypeScript,
+                        React, Next.js, Node.js, PostgreSQL) that consolidated
+                        service requests, soil-report generation, and client
+                        payments into one system — replacing a fragmented manual
+                        workflow that had been losing and duplicating customer
+                        orders.
                     </li>
                     <li>
-                        Architected and built an agronomist web portal that let staff
-                        manage service requests, generate soil-health reports, and process
-                        client payments in one system, replacing a fragmented manual
-                        workflow.
+                        Integrated OpenAI APIs to auto-generate report content
+                        from lab data, cutting report turnaround by 50% and
+                        freeing up agronomist capacity for client-facing fieldwork.
                     </li>
                     <li>
-                        Identified report generation as the biggest time sink and
-                        integrated OpenAI APIs to auto-generate agronomic insights from
-                        soil data, cutting report time by 50%.
+                        Engineered a reporting service in Node.js that turns raw
+                        lab results into client-ready PDF, Excel, and CSV
+                        deliverables with embedded charts, enabling same-day report
+                        delivery.
                     </li>
                     <li>
-                        Engineered a multi-format export engine generating client-ready
-                        PDF, XLSX, and CSV reports from lab data, including chart-image
-                        generation for visual soil-health summaries embedded in PDFs.
+                        Implemented authentication and role-based access control
+                        (OAuth 2.0, JWT) to scope data by role across scientists,
+                        staff, and clients — keeping confidential results from
+                        competing agricultural clients isolated.
                     </li>
                     <li>
-                        Implemented secure authentication and Role-Based Access Control
-                        supporting distinct roles (scientists, team members, registered
-                        users), with OTP verification, login challenge, and password-reset
-                        flows.
+                        Shipped a cross-platform React Native app to 200+ users
+                        with offline support, preserving access to agronomic
+                        guidance for field staff in low-connectivity rural areas.
                     </li>
                     <li>
-                        Built a cross-platform mobile application (React Native) serving
-                        200+ users, delivering curated agronomic content with offline
-                        support.
-                    </li>
-                    <li>
-                        Orchestrated the migration of on-premise server environments to a
-                        containerized Docker architecture on a VPS, integrating
-                        S3-compatible object storage and achieving 99.9% uptime for the
-                        agronomist portal.
-                    </li>
-                    <li>
-                        Established a CI/CD pipeline with GitHub Actions to automate
-                        linting, testing, and Docker image deployment, reducing release
-                        time and deployment errors.
-                    </li>
-                    <li>
-                        Handled incoming IT and feature requests directly with
-                        stakeholders, scoped requirements, and produced data reports to
-                        track portal usage and service throughput.
+                        Migrated on-prem servers to Docker on a Linux cloud host
+                        with S3 object storage, and stood up a GitHub Actions
+                        CI/CD pipeline for linting and testing — enabling
+                        zero-downtime releases during business hours.
                     </li>
                 </ul>
             </div>
-
             <div class="job">
                 <div class="job-header">
                     <span class="job-title">Software Automation Developer Intern</span>
@@ -105,34 +88,23 @@
                 <div class="job-company">City of Edmonton · City Operations</div>
                 <ul>
                     <li>
-                        Engineered a centralized scheduling dashboard that increased
-                        course throughput by 300%, ensuring timely recertification of over
-                        200+ municipal waste employees and alignment with provincial OHS
-                        Act regulations.
+                        Built a scheduling dashboard (JavaScript, Google Apps
+                        Script, REST APIs) surfacing overdue safety-training
+                        certifications, tripling course throughput for municipal
+                        waste employees and keeping the department compliant with
+                        the provincial OHS Act.
                     </li>
                     <li>
-                        Developed custom automation scripts using Google Apps Script and
-                        REST APIs to synchronize employee training data with municipal
-                        scheduling software.
+                        Migrated 10,000+ training records from legacy spreadsheets
+                        into a SQL relational database and defined validation rules
+                        to catch duplicate and malformed entries, eliminating
+                        manual reconciliation.
                     </li>
                     <li>
-                        Migrated 10,000+ historical training records from legacy
-                        spreadsheets into a relational database, reducing query times by
-                        ∼60% and eliminating duplicate data.
-                    </li>
-                    <li>
-                        Defined data-validation rules during the legacy-records migration
-                        to catch malformed and duplicate entries, improving reporting
-                        accuracy for OHS recertification tracking.
-                    </li>
-                    <li>
-                        Implemented Role-Based Access Control within Google Apps Script to
-                        protect sensitive employee data.
-                    </li>
-                    <li>
-                        Built the scheduling dashboard’s front-end interface and
-                        collaborated with training coordinators to translate operational
-                        requirements into automated workflows.
+                        Partnered with non-technical training coordinators to
+                        gather requirements, iterate on feedback, and align the
+                        dashboard and its access permissions with real scheduling
+                        workflows.
                     </li>
                 </ul>
             </div>
@@ -141,25 +113,27 @@
 
     <section>
         <div class="section-label">Projects</div>
-
         <div class="project">
             <div class="project-name">FlowyForm</div>
             <div class="project-desc">
-                Form builder SaaS (Next.js, Postgres, S3) with drag-and-drop UI,
-                dynamic schema generation, AI-assisted spam/fraud detection via
-                OpenAI's moderation API, pre-signed S3 uploads, and a Jest/Playwright
-                test suite (~80% coverage).
+                Form-builder SaaS (TypeScript, Next.js, PostgreSQL, AWS S3) with a
+                drag-and-drop editor and dynamic schema generation, letting
+                non-technical users deploy custom forms and collect submissions
+                with no developer involvement. Added AI spam filtering via the
+                OpenAI API, pre-signed S3 uploads for large attachments, and a
+                Jest/Playwright suite covering the create-and-submit flows.
             </div>
         </div>
-
         <div class="project">
             <div class="project-name">Accessible Reader — Capstone</div>
             <div class="project-desc">
-                Text-to-speech and translation web tool (React, Python, TTS/Translation
-                APIs) helping immigrants, ESL learners, and students access reading
-                material in their preferred language. Owned the translation pipeline
-                and TTS playback UI, with accessibility-focused controls (adjustable
-                speed, contrast, font scaling, language selection).
+                Text-to-speech and translation web tool (React, Python, REST APIs)
+                that gives immigrants, ESL learners, and students reading material
+                in their preferred language and format. Owned the translation
+                pipeline and audio-playback interface, wiring open-source TTS and
+                translation models to convert uploaded book text into spoken audio
+                across multiple languages. Delivered to the university's
+                linguistics department on two-week Agile sprints.
             </div>
         </div>
     </section>
@@ -170,30 +144,31 @@
             <div class="skill-group">
                 <div class="skill-group-label">Languages</div>
                 <div class="skill-list">
-                    TypeScript<br />JavaScript<br />Python<br />Java<br />C/C#/C++<br />SQL<br />Bash
+                    TypeScript<br />Python<br />SQL<br />Java
                 </div>
             </div>
             <div class="skill-group">
-                <div class="skill-group-label">Frameworks</div>
+                <div class="skill-group-label">Web</div>
                 <div class="skill-list">
-                    Next.js<br />React<br />React
-                    Native<br />Node.js<br />Express<br />Angular<br />Tailwind<br />GraphQL
+                    React<br />Next.js<br />React Native<br />Node.js
                 </div>
             </div>
             <div class="skill-group">
-                <div class="skill-group-label">Cloud & DevOps</div>
+                <div class="skill-group-label">Data</div>
                 <div class="skill-list">
-                    Docker<br />Kubernetes<br />AWS<br />Terraform<br />CI/CD<br />Nginx<br />Linux
+                    PostgreSQL<br />Redis<br />pgvector
                 </div>
             </div>
             <div class="skill-group">
-                <div class="skill-group-label">Databases</div>
-                <div class="skill-list">PostgreSQL<br />MongoDB<br />Redis<br />Firebase</div>
+                <div class="skill-group-label">Infra</div>
+                <div class="skill-list">
+                    Docker<br />AWS<br />CI/CD<br />Linux
+                </div>
             </div>
             <div class="skill-group">
-                <div class="skill-group-label">AI & ML</div>
+                <div class="skill-group-label">AI</div>
                 <div class="skill-list">
-                    LLM integration (OpenAI, Gemini, Anthropic)<br />RAG<br />Vector DBs (pgvector)
+                    LLM integration<br />RAG
                 </div>
             </div>
         </div>
@@ -212,5 +187,4 @@
         </div>
     </section>
 </body>
-
 </html>
